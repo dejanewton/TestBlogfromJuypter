@@ -1,0 +1,54 @@
+This is a bezier curve blog
+Making a Bezier Spline, and Updates
+
+
+It’s been awhile since I’ve written a blog, and when I say awhile, I mean almost two months. There are a few reasons for this absence: 
+
+Life 
+
+These past two months have been full of wins and challenges preparing for life after graduation. My senior quote is by Audre Lorde: “I am my best work - a series of road maps, reports, recipes, doodles and prayers from the front lines.”.
+
+GIS and ERA
+I’ve been working with Nhamo, a Data Science Engineering Manager at Barclays Bank who is new to Xalgorithims, on furthering the GIS side of things and finally converting geoTIFF files to geoJSON in a convenient way once and for all. Nhamo has been able to start doing this through a python library, Rasterio. With the help of Ted, our next plans are to run the files through his script and go from there. More about this and its importance will be in a separate blog.
+
+I’ve been working on making a curve in my Jupyter Notebook!
+
+I’m pretty excited about this curve because although it's as mundane as plotting points in Jupyter Notebook, it's a signal to me that my familiarity with Jupyter notebook has improved, especially since my last blog. The hardest part was figuring out how to insert my own data and create data frames properly, but I did it. Now I have a couple graphs, albeit I am still working and toggling with them. 
+
+
+A bit of background 
+
+Okay so now I’ll try to explain what the curve means. At Xalgorithims, I focus on the Earth Reserve Assurance Framework. In the words of Joseph Potvin, “Earth Reserve Assurance (ERA) is a framework for the determination of monetary value and quantity in a multi-currency system with no central reference unit of account.” Part of the framework operates using each physical area of the earth to find the  value  of an ERA deposit receipt amount. A geographical area’s worth is determined by its geographical features like its amount of water, minerals, topsoil, metals, species populations, etc. available. The value of these areas can then be reflected in their ERA Deposit Receipts that are bought by investors looking to build new projects and improve ecosystem integrity. 
+
+Changes in the worth of these areas are indexed by looking at geographical distribution of resources (soil temperature, vegetation, topsoil, minerals, metals, etc.) and weighting that by currency-of-transaction data. This index is reflected in a Bezier Curve. The curve has two endpoints and two shaping vectors that disincentivize reaching an investors worst case-scenario, and incentivising reaching the middle, an ‘impassable deterrence’. 
+The Bezier Spline
+
+The Bezier Spline itself is a useful way to draw continuous curves by using a few simple equations. In terms of ERA, This curve has two end points and shaping vectors that create a gradual impassable deterrence. The shape also creates a  disincentivization by accelerating the closer an indicator level gets to a worse case scenario. The middle of the curve is shaped to be a moderate incentive and as a best case/most feasible scenario.The best case scenarios encourage innovation. The curve is updated over time by the mean of a list of indicators reflecting the Earth Reserve.
+
+
+
+
+Figure 1. Indicators are aligned to the graph. Currency is determined by changes in distribution of these indicators between a set period of time and then weighted by currency-of-transaction data in that period. 
+
+Below you can see a curve. The numbers on the Y-axis are representative of the Resource & Ecosystem Degradation Index, and the X-axis is a Percentage Each Indicator Has Changed from Base Year Level to Worst/Best Case Scenario. You can toggle zoom in and out to certain values on the index and x axis to see the values close up. On the next plot you can see the percentage indicators moving as one cohesive point across the graph over the degradation index with the ability to slide the point over different percentages. This is helpful to see the shape of the curve over time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Things I am still working on
+
+There needs to be a way for readers to choose the endpoints on the graph, like a continuous curve. I am currently using plotly, and still trying to figure out how to add an equation to plot rather than just a table. If users can’t choose the endpoints, I would at least like to add a scale that can be toggled. I would also like them to be able to zoom and out of the graph just like the ones you see above.  
+
+The plots are important not only for visualizing the degradation index but also for my own learning and understanding. I do feel like my familiarity with python has gotten better these past couple months and I am interested in continuing to make plots, and find new ways to toggle and tweak them and improve their interactivity.
+
+
